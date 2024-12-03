@@ -2,7 +2,7 @@
 
 #include "continuable.hpp"
 
-inline cti::continuable<std::string> start_greetings(std::string /*url*/) {
+inline cti::continuable<std::string> start_greetings(std::string) {
   return cti::make_ready_continuable<std::string>("world");
 }
 
